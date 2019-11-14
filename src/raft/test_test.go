@@ -46,7 +46,6 @@ func TestReElection(t *testing.T) {
 	defer cfg.cleanup()
 
 	fmt.Printf("Test: election after network failure ...\n")
-
 	leader1 := cfg.checkOneLeader()
 
 	// if the leader disconnects, a new one should be elected.
